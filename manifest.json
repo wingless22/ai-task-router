@@ -1,0 +1,32 @@
+{
+  "name": "ai-task-router",
+  "version": "1.0.0",
+  "license": "MIT",
+  "language": ["en", "zh-CN"],
+  "format": "Agent Skills / SKILL.md",
+  "architecture": "route -> reasoning budget -> incremental value gate -> verification -> stop",
+  "canonical_routes": [
+    "CONVERSATION",
+    "WORKSPACE",
+    "CODE_AGENT",
+    "HYBRID"
+  ],
+  "reasoning_tiers": [
+    "R0",
+    "R1",
+    "R2"
+  ],
+  "value_gate": [
+    "E:new-evidence",
+    "D:new-decision",
+    "A:artifact-delta",
+    "V:new-verification",
+    "R:risk-reduction"
+  ],
+  "files": [
+    "README.md",
+    "SKILL.md",
+    "tests/routing-cases.md",
+    "LICENSE"
+  ]
+}
